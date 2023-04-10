@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/product', [ProductController::class, 'index']);
+
+Route::get('/details/{id}', [ProductController::class, 'product_details']);
+
